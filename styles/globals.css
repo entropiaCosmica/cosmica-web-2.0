@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* 
 html,
 body {
   padding: 0;
@@ -13,4 +17,26 @@ a {
 
 * {
   box-sizing: border-box;
+} */
+
+@layer base {
+  @font-face {
+    font-family: "SF Mono";
+    font-style: light;
+    font-weight: 300;
+    src: url('/fonts/SFMonoLight.woff') format('woff')
+  }  
+}
+
+.navItem {
+  font-family: 'SF Mono', sans-serif;
+  font-weight: 300;
+  font-size: 0.8em;
+}
+
+.email {
+  font-family: 'SF Mono', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  letter-spacing: 0.1em;
 }
