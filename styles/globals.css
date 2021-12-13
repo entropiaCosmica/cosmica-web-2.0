@@ -22,10 +22,16 @@ a {
 @layer base {
   @font-face {
     font-family: "SF Mono";
-    font-style: light;
+    font-style: normal;
     font-weight: 300;
     src: url('/fonts/SFMonoLight.woff') format('woff')
-  }  
+  },
+  @font-face {
+    font-family: "SF Mono";
+    font-style: normal;
+    font-weight: 400;
+    src: url('/fonts/SFMonoMedium.woff') format('woff')
+  }
 }
 
 .navItem {
@@ -39,4 +45,8 @@ a {
   font-weight: 300;
   font-size: 12px;
   letter-spacing: 0.1em;
+}
+
+.SFMono {
+  font-family: 'SF Mono', sans-serif;
 }

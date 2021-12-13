@@ -9,7 +9,7 @@ module.exports = {
     extend: {
       fontFamily: {
         heebo: ['Heebo', ...defaultTheme.fontFamily.sans],
-        SFMono: '"SFmono", sans-serif'
+        SFMono: ["SFmono", ...defaultTheme.fontFamily.sans]
       }
     },
     backgroundColor: theme => ({
