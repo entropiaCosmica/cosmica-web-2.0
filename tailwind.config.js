@@ -15,7 +15,8 @@ module.exports = {
     backgroundColor: theme => ({
       ...theme('colors'),
       'bg': '#222831',
-      'orange-bg': '#FD7014'
+      'orange-bg': '#FD7014',
+      'light-gray-bg': '#2c3440'
     }),
     textColor: theme => ({
       ...theme('colors'),
@@ -23,7 +24,8 @@ module.exports = {
     }),
     borderColor: theme => ({
       ...theme('colors'),
-      'orange-border': '#FD7014'
+      'orange-border': '#FD7014',
+      'gray-border': '#3e4959'
     })
   },
   plugins: [],

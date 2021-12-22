@@ -31,6 +31,12 @@ a {
     font-style: normal;
     font-weight: 400;
     src: url('/fonts/SFMonoMedium.woff') format('woff')
+  },
+  @font-face {
+    font-family: "SF Mono";
+    font-style: semibold;
+    font-weight: 500;
+    src: url('/fonts/SFMonoMedium.woff') format('woff')
   }
 }
 
@@ -49,4 +55,28 @@ a {
 
 .SFMono {
   font-family: 'SF Mono', sans-serif;
+}
+
+/* .SFMonoNormal {
+  font-family: 'SF Mono', sans-serif;
+  /* font-weight: 500; */
+  /* font-style: semibold; */
+/* } */
+
+.pic-overlay {
+  mix-blend-mode: multiply;
+}
+
+.header-blur {
+  backdrop-filter: blur(20px);
+}
+
+@layer components {
+  .activeTab {
+    @apply   text-orange-text border-orange-border bg-orange-bg bg-opacity-20
+  }
+  
+  .unactiveTab {
+    @apply  border-gray-border hover:bg-orange-bg hover:text-orange-text hover:bg-opacity-20 transition duration-200 ease-out text-gray-500
+  } 
 }
