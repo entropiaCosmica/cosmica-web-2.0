@@ -1,21 +1,30 @@
 import React from "react";
 import { IoMdArrowDropright } from "react-icons/io";
-import useCurrentWidth from '../hooks/getWidth'
+import useWidth from '../hooks/getWidth'
 
 
 const Tab = ({ title, company, dates, responsibilities }) => {
-  const getWidth = useCurrentWidth()
+  const getWidth = useWidth()
 
   return (
-    <div className="">
+    <div>
       <h3 className="space-x-2 font-heebo font-medium text-xl">
-        <span className="text-gray-300">{title}</span>
-        <span className="text-orange-text">@ <a href="#" className="hover:underline">{company}</a></span>
+        {
+          getWidth <= 1024
+            ? <div>
+              <div className="text-gray-300">{title}</div>
+              <div className="text-orange-text">@ <a href="#" className="hover:underline">{company}</a></div>
+            </div>
+            : <div>
+              <span className="text-gray-300">{title}</span>
+              <span className="text-orange-text"> @ <a href="#" className="hover:underline">{company}</a></span>
+            </div>
+        }
       </h3>
       <p className="pt-2 pb-4 text-gray-500 SFMono text-xs">{dates}</p>
 
       <div>
-        <ul className="list-none list-inside text-sm md:text-lg space-y-1 h-auto">
+        <ul className="list-none list-inside text-sm md:text-lg space-y-3 h-auto">
           {
             responsibilities.map((item, idx) => {
               return (

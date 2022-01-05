@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import Image from 'next/image'
 import { FiGithub, FiExternalLink } from 'react-icons/fi'
-import useCurrentWidth from '../hooks/getWidth'
+import useWidth from '../hooks/getWidth'
 
 import AirbnbCloneImg from '../public/portfolio/airbnb-clone.png'
 import ondigitalImg from '../public/portfolio/ondigital.png'
@@ -12,7 +12,8 @@ import ondigitalImgNormal from '../public/portfolio/ondigital-normal.png'
 import spotify2ImgNormal from '../public/portfolio/spotify-clone-normal.png'
 
 const Portfolio = () => {
-  const getWidth = useCurrentWidth()
+  const getWidth = useWidth()
+  getWidth
 
   if (getWidth <= 768) {
     return (
