@@ -1,8 +1,11 @@
 import React from "react";
 import { IoMdArrowDropright } from "react-icons/io";
+import useCurrentWidth from '../hooks/getWidth'
 
 
 const Tab = ({ title, company, dates, responsibilities }) => {
+  const getWidth = useCurrentWidth()
+
   return (
     <div className="">
       <h3 className="space-x-2 font-heebo font-medium text-xl">
@@ -17,7 +20,7 @@ const Tab = ({ title, company, dates, responsibilities }) => {
             responsibilities.map((item, idx) => {
               return (
                 <div key="" className="flex gap-2 max-w-full items-start font-heebo">
-                  <IoMdArrowDropright className="col-span-1 flex-shrink-0 text-orange-text " />
+                  <IoMdArrowDropright className="col-span-1 flex-shrink-0 text-orange-text text-xl" />
                   <li className="text-base col-span-6 text-gray-500" >{item}</li>
                 </ div>
               )
@@ -25,8 +28,6 @@ const Tab = ({ title, company, dates, responsibilities }) => {
           }
         </ul>
       </div>
-
-
     </div>
   );
 };

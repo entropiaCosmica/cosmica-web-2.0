@@ -1,6 +1,6 @@
 function Email() {
   return (
-    <div className="fixed hidden md:inline-block bottom-0 right-8 space-y-[175px] text-md text-gray-300 w-7 flex-col text-center">
+    <div className="fixed hidden lg:inline-block bottom-0 right-8 space-y-[175px] text-md text-gray-300 w-7 flex-col text-center">
       <p className="transform rotate-90 email hover:text-orange-text cursor-pointer">
         entropia@cosmica.dev
       </p>
