@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import { useEffect } from 'react/cjs/react.production.min'
 import About from '../components/About'
 import Contact from '../components/Contact'
 import Email from '../components/Email'
@@ -8,7 +9,6 @@ import Portfolio from '../components/Portfolio'
 import Social from '../components/Social'
 import Start from '../components/Start'
 import Work from '../components/Work'
-import styles from '../styles/Home.module.css'
 
 export default function Home() {
   return (

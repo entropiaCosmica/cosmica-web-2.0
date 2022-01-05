@@ -1,28 +1,22 @@
 import { useState, useEffect } from 'react';
 
-const hasWindow = typeof window !== "undefined"
-
-const getWidth = () => {
-  const windowWidth = hasWindow ? window.innerWidth : null
-  return windowWidth
-}
-
-function useCurrentWidth() {
-  let [width, setWidth] = useState(getWidth());
+function useWidth() {
+  // Initialize state with undefined width/height so server and client renders match
+  const [windowSize, setWindowSize] = useState(undefined);
   useEffect(() => {
-    let timeoutId = null;
-    if (hasWindow) {
-      const resizeListener = () => {
-        clearTimeout(timeoutId);
-        timeoutId = setTimeout(() => setWidth(getWidth()), 150);
-      };
-      window.addEventListener('resize', resizeListener);
-      return () => {
-        window.removeEventListener('resize', resizeListener);
-      }
+    // Handler to call on window resize
+    function handleResize() {
+      // Set window width/height to state
+      setWindowSize(window.innerWidth);
     }
-  }, [])
-  return width;
+    // Add event listener
+    window.addEventListener("resize", handleResize);
+    // Call handler right away so state gets updated with initial window size
+    handleResize();
+    // Remove event listener on cleanup
+    return () => window.removeEventListener("resize", handleResize);
+  }, []); // Empty array ensures that effect is only run on mount
+  return windowSize;
 }
 
-export default useCurrentWidth
+export default useWidth

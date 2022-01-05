@@ -1,8 +1,8 @@
-import useCurrentWidth from '../hooks/getWidth'
+import useWidth from '../hooks/getWidth'
 import { FiGithub, FiInstagram, FiTwitter, FiLinkedin } from 'react-icons/fi'
 
 function Footer() {
-  const getWidth = useCurrentWidth()
+  const getWidth = useWidth()
   return (
     <div className="justify-center flex flex-col text-center SFMono text-xs pb-8 text-gray-400 space-y-8">
       {
