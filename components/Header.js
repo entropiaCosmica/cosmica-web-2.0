@@ -19,21 +19,6 @@ const headerStyles = [
 const strStyles = headerStyles.join(' ').toString()
 
 function Header() {
-  const [show, setShow] = useState(true)
-  const controlNav = () => {
-    if (window.scrollY > 100) {
-      setShow(false)
-    } else {
-      setShow(true)
-    }
-  }
-
-  useEffect(() => {
-    window.addEventListener('scroll', controlNav)
-    return () => {
-      window.removeEventListener('scroll', controlNav)
-    }
-  }, [])
 
   const onResumeClick = () => {
     window.open(pdf);
