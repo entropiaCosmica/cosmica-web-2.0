@@ -1,7 +1,7 @@
 import Image from 'next/image'
-import CosmicPixelLogoSVGorizontal from '../public/logo/cosmic-pixel_logo_h.svg'
-import pdf from '../static/Santiago_Zapata_CV.pdf'
-import useWidth from '../hooks/useWidth'
+import CosmicPixelLogoSVGorizontal from '../../public/logo/cosmic-pixel_logo_h.svg'
+import pdf from '../../static/Santiago_Zapata_CV.pdf'
+import useWidth from '../../hooks/useWidth'
 
 const headerStyles = [
   'flex',
@@ -26,7 +26,7 @@ function Header() {
   }
 
   return (
-    <header className={`fixed flex z-50 shadow-sm py-4 lg:px-2 justify-between top-0 min-w-full bg-bg bg-opacity-70 backdrop-blur-md`}>
+    <header className={`fixed flex z-50 shadow-sm py-4 lg:px-2 justify-between top-0 min-w-full bg-bg bg-opacity-80 backdrop-blur-md`}>
       <nav className="mx-8 lg:mx-10 flex justify-between relative w-full max-w-auto">
         {/** Logo */}
         <div className="flex justify-start lg:h-16 w-32 lg:w-36 items-center cursor-pointer">

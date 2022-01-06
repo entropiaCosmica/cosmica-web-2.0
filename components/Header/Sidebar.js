@@ -1,19 +1,25 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { HiMenuAlt3 } from 'react-icons/hi'
 import { ImCross } from 'react-icons/im'
 import Image from 'next/image'
-import CosmicPixelLogoSVGorizontal from '../public/logo/cosmic-pixel_logo_h.svg'
-import pdf from '../static/Santiago_Zapata_CV.pdf'
+import CosmicPixelLogoSVGorizontal from '../../public/logo/cosmic-pixel_logo_h.svg'
+import pdf from '../../static/Santiago_Zapata_CV.pdf'
 
 function Sidebar() {
   const [isOpen, setIsOpen] = useState(false)
+
+  useEffect(() => {
+    isOpen
+      ? document.body.style.overflow = 'hidden'
+      : document.body.style.overflow = 'scroll'
+  }, [isOpen])
 
   const onResumeClick = () => {
     window.open(pdf);
   }
   return (
     <>
-      <div className="w-full h-20 flex fixed bg-bg backdrop-blur-md  bg-opacity-20 z-30">
+      <div className="w-full h-20 flex fixed bg-bg backdrop-blur-md bg-opacity-80 z-30">
         <div className="h-16 w-32 cursor-pointer relative left-6 top-2">
           <Image
             className=""
@@ -28,7 +34,7 @@ function Sidebar() {
       {isOpen
         ?
         <button
-          className="fixed z-40 flex items-center cursor-pointer right-11 top-8 text-orange-text text-lg"
+          className="fixed z-50 flex items-center cursor-pointer right-11 top-8 text-orange-text text-lg"
           onClick={() => setIsOpen(!isOpen)}>
           <ImCross />
         </button>
