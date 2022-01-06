@@ -24,7 +24,7 @@ const Portfolio = () => {
           </div>
           <ul className="space-y-14 ">
             <li className="shadow-md relative ">
-              <div className={`flex justify-left h-96`}>
+              <div className={`flex justify-left h-96 relative`}>
                 <Image
                   alt=''
                   className="rounded-md"
@@ -60,7 +60,7 @@ const Portfolio = () => {
               </div>
             </li>
             <li className="shadow-md relative ">
-              <div className={`flex justify-left h-96`}>
+              <div className={`flex justify-left h-96 relative`}>
                 <Image
                   alt=''
                   className="rounded-md"
@@ -96,7 +96,7 @@ const Portfolio = () => {
               </div>
             </li>
             <li className="shadow-md relative ">
-              <div className={`flex justify-left h-96`}>
+              <div className={`flex justify-left h-96 relative`}>
                 <Image
                   alt=''
                   className="rounded-md"
@@ -157,6 +157,7 @@ const Portfolio = () => {
                 alt=''
                 objectFit='contain'
                 objectPosition="left"
+                priority="normal"
               />
             </div>
 
@@ -227,6 +228,7 @@ const Portfolio = () => {
                 alt=''
                 objectFit='contain'
                 objectPosition="left"
+                priority="normal"
               />
             </div>
           </li>
@@ -240,6 +242,7 @@ const Portfolio = () => {
                 alt=''
                 objectFit='contain'
                 objectPosition="left"
+                priority="normal"
               />
             </div>
 

@@ -19,6 +19,7 @@ function Sidebar() {
   const onResumeClick = () => {
     window.open(pdf);
   }
+
   return (
     <>
       <div className="w-full h-20 flex fixed bg-bg backdrop-blur-md bg-opacity-80 z-30">
@@ -109,7 +110,7 @@ function Sidebar() {
           <li className="pt-10">
             <a
               onClick={onResumeClick}
-              without rel="noopener noreferrer"
+              rel="noopener noreferrer"
               target="_blank">
               <button className="border border-orange-border text-orange-text px-12 py-3 rounded-md hover:bg-orange-bg hover:bg-opacity-20 transition duration-200 ease-out">
                 Resume

@@ -64,7 +64,7 @@ const Tabs = () => {
         <div className="flex flex-col space-y-5">
 
           {/** Sidebar */}
-          <div className="SFMono text-sm overflow-x-scroll whitespace-nowrap flex justify-center">
+          <div className={`SFMono text-sm overflow-x-scroll whitespace-nowrap ${getWidth > 375 ? 'flex' : null} justify-center`}>
             {
               data.map((item) => {
                 return (

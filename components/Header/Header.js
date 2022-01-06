@@ -34,7 +34,7 @@ function Header() {
           <Image
             src={CosmicPixelLogoSVGorizontal}
             alt="Cosmica Logo"
-            layout=''
+            // layout=''
             objectFit='contain'
             objectPosition="left"
           />
@@ -94,7 +94,7 @@ function Header() {
               <p className="text-gray-300 hover:text-orange-text">Contact</p>
             </div>
           </Link>
-          <a onClick={onResumeClick} without rel="noopener noreferrer" target="_blank">
+          <a onClick={onResumeClick} rel="noopener noreferrer" target="_blank">
             <button className="border border-orange-border text-orange-text px-5 py-2.5 rounded-lg hover:bg-orange-bg hover:bg-opacity-20 transition duration-200 ease-out">Resume</button>
           </a>
         </div>
