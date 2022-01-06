@@ -1,6 +1,6 @@
 import React from "react";
 import { IoMdArrowDropright } from "react-icons/io";
-import useWidth from '../hooks/getWidth'
+import useWidth from '../hooks/useWidth'
 
 
 const Tab = ({ title, company, dates, responsibilities }) => {
