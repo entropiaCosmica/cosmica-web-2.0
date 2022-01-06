@@ -23,16 +23,27 @@ function Sidebar() {
   return (
     <>
       <div className="w-full h-20 flex fixed bg-bg backdrop-blur-md bg-opacity-80 z-30">
-        <div className="h-16 w-32 cursor-pointer relative left-6 top-2">
-          <Image
-            className=""
-            src={CosmicPixelLogoSVGorizontal}
-            alt="Cosmica Logo"
-            layout='fill'
-            objectFit='contain'
-            objectPosition="left"
-          />
-        </div>
+
+        <Link
+          activeClass="active"
+          to="start"
+          spy={true}
+          smooth={true}
+          offset={0}
+          duration={500}
+        >
+          <div className="h-16 w-32 cursor-pointer relative left-6 top-2">
+            <Image
+              className=""
+              src={CosmicPixelLogoSVGorizontal}
+              alt="Cosmica Logo"
+              layout='fill'
+              objectFit='contain'
+              objectPosition="left"
+            />
+          </div>
+        </Link>
+
       </div>
       {isOpen
         ?
