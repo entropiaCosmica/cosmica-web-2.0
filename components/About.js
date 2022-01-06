@@ -4,7 +4,7 @@ import { IoMdArrowDropright } from 'react-icons/io'
 
 function About() {
   return (
-    <section className="max-w-[900px] py-[100px] mx-auto ">
+    <section className="max-w-[900px] py-[100px] mx-auto" id="about">
       <div className="flex flex-col space-y-5 justify-center">
         <div className="flex align-bottom items-baseline w-full">
           <span className="text-orange-text SFMono text-md md:text-lg font-bold mr-2">01.</span>
