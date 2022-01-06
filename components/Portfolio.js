@@ -1,6 +1,5 @@
-import { useState, useEffect } from 'react'
-import Image from 'next/image'
 import { FiGithub, FiExternalLink } from 'react-icons/fi'
+import Image from 'next/image'
 import useWidth from '../hooks/useWidth'
 
 import AirbnbCloneImg from '../public/portfolio/airbnb-clone.png'
@@ -13,11 +12,10 @@ import spotify2ImgNormal from '../public/portfolio/spotify-clone-normal.png'
 
 const Portfolio = () => {
   const getWidth = useWidth()
-  getWidth
 
   if (getWidth <= 768) {
     return (
-      <section className="max-w-[1000px] py-[100px] mx-auto max-h-full">
+      <section className="max-w-[1000px] py-[100px] mx-auto max-h-full" id="portfolio" >
         <div className="flex flex-col space-y-5 justify-center">
           <div className="flex align-bottom items-baseline w-full mb-[20px]">
             <span className="text-orange-text SFMono text-md md:text-lg font-bold mr-2">03.</span>
@@ -141,7 +139,7 @@ const Portfolio = () => {
   }
 
   return (
-    <section className="max-w-[1000px] py-[100px] mx-auto max-h-full">
+    <section className="max-w-[1000px] py-[100px] mx-auto max-h-full" id="portfolio">
       <div className="flex flex-col space-y-5 justify-center">
         <div className="flex align-bottom items-baseline w-full mb-[40px]">
           <span className="text-orange-text SFMono text-md md:text-lg font-bold mr-2">03.</span>

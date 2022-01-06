@@ -6,7 +6,7 @@ import Footer from '../components/Footer'
 import Portfolio from '../components/Portfolio'
 import Social from '../components/Social'
 import Start from '../components/Start'
-import Work from '../components/Work'
+import Experience from '../components/Experience'
 import Header from '../components/Header/Header'
 import Sidebar from '../components/Header/Sidebar'
 import useWidth from '../hooks/useWidth'
@@ -36,7 +36,7 @@ export default function Home() {
       <main className="px-[25px] md:px-[100px] xl:px-[150px] mx-auto my-0 max-w-[1600px]">
         <Start />
         <About />
-        <Work />
+        <Experience />
         <Portfolio />
         <Contact />
       </main>

@@ -17,7 +17,7 @@ function Contact() {
   }
 
   return (
-    <section className="max-w-[900px] py-[100px] mx-auto">
+    <section className="max-w-[900px] py-[100px] mx-auto" id="contact">
       <div className="flex SFMono items-baseline justify-center w-full text-orange-text">
         <span className="md:text-sm font-semibold mr-2">04.</span>
         <h2 className="md:text-base w-auto font-light whitespace-nowrap">What&apos;s next?</h2>

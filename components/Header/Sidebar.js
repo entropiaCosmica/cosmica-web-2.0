@@ -1,9 +1,11 @@
 import { useState, useEffect } from 'react'
+import Image from 'next/image'
+
 import { HiMenuAlt3 } from 'react-icons/hi'
 import { ImCross } from 'react-icons/im'
-import Image from 'next/image'
 import CosmicPixelLogoSVGorizontal from '../../public/logo/cosmic-pixel_logo_h.svg'
 import pdf from '../../static/Santiago_Zapata_CV.pdf'
+import { Link } from 'react-scroll'
 
 function Sidebar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -47,21 +49,62 @@ function Sidebar() {
       }
       <div className={`top-0 right-0 w-[75vw] sm:w-[50vw] bg-light-gray-bg flex flex-col justify-center fixed h-full z-40 ${isOpen ? 'translate-x-0' : 'translate-x-full'} ease-in-out duration-300`}>
         <ul className="space-y-8 block text-center SFMono">
+
           <li className="cursor-pointer">
-            <p className="text-orange-text text-sm">01.</p>
-            <p className="text-gray-300 hover:text-orange-text">About</p>
+            <Link
+              onClick={() => setIsOpen(!isOpen)}
+              activeClass="active"
+              to="about"
+              spy={true}
+              smooth={true}
+              offset={-20}
+              duration={500}
+            >
+              <p className="text-orange-text text-sm">01.</p>
+              <p className="text-gray-300 hover:text-orange-text">About</p>
+            </Link>
           </li>
           <li className="cursor-pointer">
-            <p className="text-orange-text text-sm">02.</p>
-            <p className="text-gray-300 hover:text-orange-text">Experience</p>
+            <Link
+              onClick={() => setIsOpen(!isOpen)}
+              activeClass="active"
+              to="experience"
+              spy={true}
+              smooth={true}
+              offset={-20}
+              duration={500}
+            >
+              <p className="text-orange-text text-sm">02.</p>
+              <p className="text-gray-300 hover:text-orange-text">Experience</p>
+            </Link>
           </li>
           <li className="cursor-pointer">
-            <p className="text-orange-text text-sm">03.</p>
-            <p className="text-gray-300 hover:text-orange-text">Work</p>
+            <Link
+              onClick={() => setIsOpen(!isOpen)}
+              activeClass="active"
+              to="portfolio"
+              spy={true}
+              smooth={true}
+              offset={-20}
+              duration={500}
+            >
+              <p className="text-orange-text text-sm">03.</p>
+              <p className="text-gray-300 hover:text-orange-text">Work</p>
+            </Link>
           </li>
           <li className="cursor-pointer">
-            <p className="text-orange-text text-sm">04.</p>
-            <p className="text-gray-300 hover:text-orange-text">Contact</p>
+            <Link
+              onClick={() => setIsOpen(!isOpen)}
+              activeClass="active"
+              to="contact"
+              spy={true}
+              smooth={true}
+              offset={-20}
+              duration={500}
+            >
+              <p className="text-orange-text text-sm">04.</p>
+              <p className="text-gray-300 hover:text-orange-text">Contact</p>
+            </Link>
           </li>
           <li className="pt-10">
             <a
