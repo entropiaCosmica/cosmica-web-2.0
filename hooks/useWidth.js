@@ -4,10 +4,12 @@ function useWidth() {
   // Initialize state with undefined width/height so server and client renders match
   const [windowSize, setWindowSize] = useState(undefined);
   useEffect(() => {
+    let timeoutId = null;
     // Handler to call on window resize
     function handleResize() {
-      // Set window width/height to state
-      setWindowSize(window.innerWidth);
+      // Set window width to state
+      clearTimeout(timeoutId);
+      timeoutId = setTimeout(() => setWindowSize(window.innerWidth), 150);
     }
     // Add event listener
     window.addEventListener("resize", handleResize);

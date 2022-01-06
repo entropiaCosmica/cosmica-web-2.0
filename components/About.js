@@ -2,8 +2,6 @@ import Image from "next/image"
 import profile from '../public/personal-pic.png'
 import { IoMdArrowDropright } from 'react-icons/io'
 
-// import testImg from '../public/test-test.jpg'
-
 function About() {
   return (
     <section className="max-w-[900px] py-[100px] mx-auto ">
@@ -14,7 +12,7 @@ function About() {
           <div className="border-t-[0.1em] border-gray-600 w-full bottom-1.5 relative ml-4" />
         </div>
         <div className="flex flex-col lg:grid lg:grid-cols-5 gap-12">
-          <div className="text-gray-400 space-y-3 col-span-3 text-base md:text-lg text-left">
+          <div className="text-gray-400 space-y-3 col-span-3 text-base text-left">
             <p className="">
               Quisque dapibus neque id nisl accumsan lobortis. Duis libero justo, hendrerit eget nisi vitae, dignissim efficitur erat.
               Nunc feugiat dolor ut lectus commodo, id tempor elit convallis. Duis laoreet auctor massa vitae convallis.

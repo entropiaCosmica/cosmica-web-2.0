@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import { useEffect } from 'react/cjs/react.production.min'
 import About from '../components/About'
 import Contact from '../components/Contact'
 import Email from '../components/Email'
@@ -9,8 +8,12 @@ import Portfolio from '../components/Portfolio'
 import Social from '../components/Social'
 import Start from '../components/Start'
 import Work from '../components/Work'
+import Sidebar from '../components/Sidebar'
+import useWidth from '../hooks/useWidth'
 
 export default function Home() {
+  const getWidth = useWidth()
+
   return (
     <div className="bg-bg">
       <Head>
@@ -22,7 +25,13 @@ export default function Home() {
         <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;800&display=swap" rel="stylesheet" />
       </Head>
 
-      <Header />
+      {
+        getWidth <= 768
+          ? <Sidebar />
+          : <Header />
+      }
+
+
 
       <main className="px-[25px] md:px-[100px] xl:px-[150px] mx-auto my-0 max-w-[1600px]">
         <Start />

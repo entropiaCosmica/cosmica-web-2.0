@@ -1,7 +1,7 @@
 import Image from 'next/image'
-import { useState, useEffect } from 'react'
 import CosmicPixelLogoSVGorizontal from '../public/logo/cosmic-pixel_logo_h.svg'
 import pdf from '../static/Santiago_Zapata_CV.pdf'
+import useWidth from '../hooks/useWidth'
 
 const headerStyles = [
   'flex',
@@ -19,6 +19,7 @@ const headerStyles = [
 const strStyles = headerStyles.join(' ').toString()
 
 function Header() {
+  const getWidth = useWidth()
 
   const onResumeClick = () => {
     window.open(pdf);
@@ -39,7 +40,7 @@ function Header() {
         </div>
 
         {/** Nav Items */}
-        <div className="hidden space-x-8 justify-end items-center navItem lg:inline-flex z-40">
+        <div className="space-x-8 justify-end items-center navItem inline-flex z-40">
           <div className="flex space-x-2 cursor-pointer">
             <p className="text-orange-text">01.</p>
             <p className="text-gray-300 hover:text-orange-text">About</p>

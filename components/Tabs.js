@@ -1,10 +1,11 @@
 import { useState } from 'react';
 import Tab from './Tab'
 import data from './data/portfolioData'
-import useWidth from '../hooks/getWidth'
+import useWidth from '../hooks/useWidth'
 
 const Tabs = () => {
   const [activeTab, setActiveTab] = useState(0)
+
   const tabDefStyles = [
     "border-l-2",
     "h-10",
@@ -63,7 +64,7 @@ const Tabs = () => {
         <div className="flex flex-col space-y-5">
 
           {/** Sidebar */}
-          <div className="SFMono text-sm overflow-x-scroll whitespace-nowrap md:flex justify-center">
+          <div className="SFMono text-sm overflow-x-scroll whitespace-nowrap flex justify-center">
             {
               data.map((item) => {
                 return (

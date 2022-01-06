@@ -1,4 +1,4 @@
-import useWidth from '../hooks/getWidth'
+import useWidth from '../hooks/useWidth'
 import { FiGithub, FiInstagram, FiTwitter, FiLinkedin } from 'react-icons/fi'
 
 function Footer() {
@@ -15,7 +15,7 @@ function Footer() {
           </div>
           : null
       }
-      <a className="hover:text-orange-text transition duration-300 ease-out" href="http://www.github.com/entropiaCosmica" target="_blank" rel="noopener noreferrer">Designed & Built by Santiago Zapata</a>
+      <a className="hover:text-orange-text transition duration-300 ease-out w-fit self-center" href="http://www.github.com/entropiaCosmica" target="_blank" rel="noopener noreferrer">Designed & Built by Santiago Zapata</a>
     </div>
   )
 }

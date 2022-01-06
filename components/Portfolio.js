@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import Image from 'next/image'
 import { FiGithub, FiExternalLink } from 'react-icons/fi'
-import useWidth from '../hooks/getWidth'
+import useWidth from '../hooks/useWidth'
 
 import AirbnbCloneImg from '../public/portfolio/airbnb-clone.png'
 import ondigitalImg from '../public/portfolio/ondigital.png'
@@ -37,7 +37,7 @@ const Portfolio = () => {
                 />
                 <div className="absolute place-self-center flex flex-col max-w-full px-8">
                   <span className="SFMono text-orange-text text-sm">Featured Project</span>
-                  <h2 className="text-gray-200 text-xl md:text-xl w-auto font-heebo font-semibold whitespace-nowrap pt-2">Airbnb clone responsive UI</h2>
+                  <h2 className="text-gray-200 text-xl md:text-xl w-auto font-heebo font-semibold pt-2">Airbnb clone responsive UI</h2>
                   <div className="h-auto py-6 text-gray-400">
                     <p>
                       Clon de Airbnb desarrollado con React, Next JS y Tailwind CSS con calendario de reserva por fechas y mapa de geolocalización.
@@ -73,7 +73,7 @@ const Portfolio = () => {
                 />
                 <div className="absolute place-self-center flex flex-col max-w-full px-8">
                   <span className="SFMono text-orange-text text-sm">Featured Project</span>
-                  <h2 className="text-gray-200 text-xl md:text-xl w-auto font-heebo font-semibold whitespace-nowrap pt-2">OnDigital Pro</h2>
+                  <h2 className="text-gray-200 text-xl md:text-xl w-auto font-heebo font-semibold pt-2">OnDigital Pro</h2>
                   <div className="h-auto py-6 text-gray-400">
                     <p>
                       Sitio web en Wordpress para grupo de asesores de inversiones en mercados forex, crypto, acciones e indíces bursátiles.
@@ -109,7 +109,7 @@ const Portfolio = () => {
                 />
                 <div className="absolute place-self-center flex flex-col max-w-full px-8">
                   <span className="SFMono text-orange-text text-sm">Featured Project</span>
-                  <h2 className="text-gray-200 text-xl md:text-xl w-auto font-heebo font-semibold whitespace-nowrap pt-2">Spotify Clone</h2>
+                  <h2 className="text-gray-200 text-xl md:text-xl w-auto font-heebo font-semibold pt-2">Spotify Clone</h2>
                   <div className="h-auto py-6 text-gray-400">
                     <p>
                       Web app responsive desarrollada con la API oficial de Spotify, Next JS y Tailwind CSS, para visualizar la lista de playlists del usuario, canciones y reproductor funcional para reproducir/pausar y cambiar de canción.
@@ -184,7 +184,7 @@ const Portfolio = () => {
                   Tailwind
                 </li>
               </ul>
-              <div className="flex justify-end w-full self-end text-gray-400 pt-4 text-xl space-x-3">
+              <div className="flex justify-end w-full self-end text-gray-400 text-xl space-x-3">
                 <FiGithub className="hover:text-orange-text transition duration-400 ease-out" />
                 <FiExternalLink className="hover:text-orange-text transition duration-400 ease-out" />
               </div>
@@ -215,7 +215,7 @@ const Portfolio = () => {
                   Elementor
                 </li>
               </ul>
-              <div className="flex justify-start w-full self-start text-gray-400 pt-4 text-xl space-x-3">
+              <div className="flex justify-start w-full self-start text-gray-400 text-xl space-x-3">
                 <FiGithub className="hover:text-orange-text transition duration-400 ease-out" />
                 <FiExternalLink className="hover:text-orange-text transition duration-400 ease-out" />
               </div>
@@ -267,7 +267,7 @@ const Portfolio = () => {
                   Tailwind
                 </li>
               </ul>
-              <div className="flex justify-end w-full self-end text-gray-400 pt-4 text-xl space-x-3">
+              <div className="flex justify-end w-full self-end text-gray-400 text-xl space-x-3">
                 <FiGithub className="hover:text-orange-text transition duration-400 ease-out" />
                 <FiExternalLink className="hover:text-orange-text transition duration-400 ease-out" />
               </div>
