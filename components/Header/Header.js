@@ -30,15 +30,24 @@ function Header() {
     <header className={`fixed flex z-50 shadow-sm py-4 lg:px-2 justify-between top-0 min-w-full bg-bg bg-opacity-80 backdrop-blur-md`}>
       <nav className="mx-8 lg:mx-10 flex justify-between relative w-full max-w-auto">
         {/** Logo */}
-        <div className="flex justify-start lg:h-16 w-32 lg:w-36 items-center cursor-pointer">
-          <Image
-            src={CosmicPixelLogoSVGorizontal}
-            alt="Cosmica Logo"
-            layout=''
-            objectFit='contain'
-            objectPosition="left"
-          />
-        </div>
+        <Link
+          activeClass="active"
+          to="start"
+          spy={true}
+          smooth={true}
+          offset={0}
+          duration={500}
+        >
+          <div className="flex justify-start lg:h-16 w-32 lg:w-36 items-center cursor-pointer">
+            <Image
+              src={CosmicPixelLogoSVGorizontal}
+              alt="Cosmica Logo"
+              // layout=''
+              objectFit='contain'
+              objectPosition="left"
+            />
+          </div>
+        </Link>
 
         {/** Nav Items */}
         <div className="space-x-8 justify-end items-center navItem inline-flex z-40">
@@ -94,7 +103,7 @@ function Header() {
               <p className="text-gray-300 hover:text-orange-text">Contact</p>
             </div>
           </Link>
-          <a onClick={onResumeClick} without rel="noopener noreferrer" target="_blank">
+          <a onClick={onResumeClick} rel="noopener noreferrer" target="_blank">
             <button className="border border-orange-border text-orange-text px-5 py-2.5 rounded-lg hover:bg-orange-bg hover:bg-opacity-20 transition duration-200 ease-out">Resume</button>
           </a>
         </div>

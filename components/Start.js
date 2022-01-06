@@ -1,6 +1,8 @@
+import { Link } from 'react-scroll'
+
 function Start() {
   return (
-    <section className="max-w-[1000px] flex flex-col justify-center min-h-screen mx-auto my-0">
+    <section className="max-w-[1000px] flex flex-col justify-center min-h-screen mx-auto my-0" id="start">
       <div className="pl-1 pb-6">
         <h1 className="text-orange-text font-semibold SFMono">
           Hi, my name is
@@ -17,7 +19,17 @@ function Start() {
       <div className="text-gray-400 mt-5 text-base md:text-md max-w-xl">
         <p>I&apos;m a software developer specializing in building (and occasionally designing) exceptional digital experiences. Currently, I&apos;m focused on building accessible applications to help modern <span className="text-orange-text font-medium">entrepreneurs</span>.</p>
       </div>
-      <button className=" border border-orange-border text-orange-text py-4 px-3 w-56 rounded-md mt-12 hover:bg-orange-bg hover:bg-opacity-20 transition duration-300 ease-out SFMono whitespace-nowrap text-sm">Check out my projects!</button>
+
+      <Link
+        activeClass="active"
+        to="portfolio"
+        spy={true}
+        smooth={true}
+        offset={-20}
+        duration={500}
+      >
+        <button className=" border border-orange-border text-orange-text py-4 px-3 w-56 rounded-md mt-12 hover:bg-orange-bg hover:bg-opacity-20 transition duration-300 ease-out SFMono whitespace-nowrap text-sm">Check out my projects!</button>
+      </Link>
     </section>
   )
 }
