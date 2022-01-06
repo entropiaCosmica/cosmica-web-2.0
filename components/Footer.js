@@ -6,7 +6,7 @@ function Footer() {
   return (
     <div className="justify-center flex flex-col text-center SFMono text-xs pb-8 text-gray-400 space-y-8">
       {
-        getWidth <= 1024
+        getWidth <= 768
           ? <div className="flex justify-center text-xl space-x-8">
             <FiGithub className="hover:text-orange-text" />
             <FiInstagram className="hover:text-orange-text" />
