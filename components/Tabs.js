@@ -27,25 +27,31 @@ const Tabs = () => {
     switch (active) {
       case 0:
         return <Tab
+          index={data[0].idx}
           title={data[0].title}
           company={data[0].company}
           dates={data[0].dates}
+          link={data[0].link}
           responsibilities={data[0].responsibilities}
         />
 
       case 1:
         return <Tab
+          index={data[1].idx}
           title={data[1].title}
           company={data[1].company}
           dates={data[1].dates}
+          link={data[1].link}
           responsibilities={data[1].responsibilities}
         />
 
       case 2:
         return <Tab
+          index={data[2].idx}
           title={data[2].title}
           company={data[2].company}
           dates={data[2].dates}
+          link={data[2].link}
           responsibilities={data[2].responsibilities}
         />
     }
@@ -80,7 +86,7 @@ const Tabs = () => {
           </div>
 
           {/** Content */}
-          <div className="flex flex-col space-y-10 h-[300px]">
+          <div className="flex flex-col space-y-10 h-fit">
             {
               setTabInfo(activeTab)
             }
@@ -116,7 +122,7 @@ const Tabs = () => {
         </div>
 
         {/** Content */}
-        <div className="flex flex-col space-y-3 h-[300px]">
+        <div className="flex flex-col space-y-3 h-fit">
           {
             setTabInfo(activeTab)
           }
