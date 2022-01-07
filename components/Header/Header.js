@@ -56,7 +56,7 @@ function Header() {
             to="about"
             spy={true}
             smooth={true}
-            offset={-20}
+            offset={-150}
             duration={500}
           >
             <div className="flex space-x-2 cursor-pointer">

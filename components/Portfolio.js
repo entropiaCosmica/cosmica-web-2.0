@@ -51,10 +51,21 @@ const Portfolio = () => {
                     <li>
                       Tailwind
                     </li>
+                    <li>
+                      Mapbox
+                    </li>
                   </ul>
                   <div className="flex justify-start w-full self-end text-gray-400 pt-5 text-xl space-x-3">
-                    <FiGithub className="hover:text-orange-text transition duration-400 ease-out" />
-                    <FiExternalLink className="hover:text-orange-text transition duration-400 ease-out" />
+                    <div>
+                      <a href="https://github.com/entropiaCosmica/airbnb-clone" target="_blank" rel="noopener noreferrer">
+                        <FiGithub className="hover:text-orange-text transition duration-400 ease-out" />
+                      </a>
+                    </div>
+                    <div>
+                      <a href="https://airbnb-clone-weld-eta.vercel.app" target="_blank" rel="noopener noreferrer">
+                        <FiExternalLink className="hover:text-orange-text transition duration-400 ease-out" />
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -89,8 +100,16 @@ const Portfolio = () => {
                     </li>
                   </ul>
                   <div className="flex justify-start w-full self-end text-gray-400 pt-5 text-xl space-x-3">
-                    <FiGithub className="hover:text-orange-text transition duration-400 ease-out" />
-                    <FiExternalLink className="hover:text-orange-text transition duration-400 ease-out" />
+                    {/* <div>
+                      <a href="https://github.com/entropiaCosmica/airbnb-clone" target="_blank" rel="noopener noreferrer">
+                        <FiGithub className="hover:text-orange-text transition duration-400 ease-out" />
+                      </a>
+                    </div> */}
+                    <div>
+                      <a href="https://www.cosmica.dev/ondigital/index.php/home/" target="_blank" rel="noopener noreferrer">
+                        <FiExternalLink className="hover:text-orange-text transition duration-400 ease-out" />
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -125,8 +144,16 @@ const Portfolio = () => {
                     </li>
                   </ul>
                   <div className="flex justify-start w-full self-end text-gray-400 pt-5 text-xl space-x-3">
-                    <FiGithub className="hover:text-orange-text transition duration-400 ease-out" />
-                    <FiExternalLink className="hover:text-orange-text transition duration-400 ease-out" />
+                    <div>
+                      <a href="https://github.com/entropiaCosmica/spotify-clone" target="_blank" rel="noopener noreferrer">
+                        <FiGithub className="hover:text-orange-text transition duration-400 ease-out" />
+                      </a>
+                    </div>
+                    <div>
+                      <a href="https://spotify-clone-henna.vercel.app/login" target="_blank" rel="noopener noreferrer">
+                        <FiExternalLink className="hover:text-orange-text transition duration-400 ease-out" />
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -183,9 +210,15 @@ const Portfolio = () => {
                   Tailwind
                 </li>
               </ul>
-              <div className="flex justify-end w-full self-end text-gray-400 text-xl space-x-3">
-                <FiGithub className="hover:text-orange-text transition duration-400 ease-out" />
-                <FiExternalLink className="hover:text-orange-text transition duration-400 ease-out" />
+              <div>
+                <a href="https://github.com/entropiaCosmica/airbnb-clone" target="_blank" rel="noopener noreferrer">
+                  <FiGithub className="hover:text-orange-text transition duration-400 ease-out" />
+                </a>
+              </div>
+              <div>
+                <a href="https://airbnb-clone-weld-eta.vercel.app" target="_blank" rel="noopener noreferrer">
+                  <FiExternalLink className="hover:text-orange-text transition duration-400 ease-out" />
+                </a>
               </div>
             </div>
           </li>
@@ -215,8 +248,16 @@ const Portfolio = () => {
                 </li>
               </ul>
               <div className="flex justify-start w-full self-start text-gray-400 text-xl space-x-3">
-                <FiGithub className="hover:text-orange-text transition duration-400 ease-out" />
-                <FiExternalLink className="hover:text-orange-text transition duration-400 ease-out" />
+                {/* <div>
+                      <a href="https://github.com/entropiaCosmica/airbnb-clone" target="_blank" rel="noopener noreferrer">
+                        <FiGithub className="hover:text-orange-text transition duration-400 ease-out" />
+                      </a>
+                    </div> */}
+                <div>
+                  <a href="https://www.cosmica.dev/ondigital/index.php/home/" target="_blank" rel="noopener noreferrer">
+                    <FiExternalLink className="hover:text-orange-text transition duration-400 ease-out" />
+                  </a>
+                </div>
               </div>
             </div>
 
@@ -269,8 +310,16 @@ const Portfolio = () => {
                 </li>
               </ul>
               <div className="flex justify-end w-full self-end text-gray-400 text-xl space-x-3">
-                <FiGithub className="hover:text-orange-text transition duration-400 ease-out" />
-                <FiExternalLink className="hover:text-orange-text transition duration-400 ease-out" />
+                <div>
+                  <a href="https://github.com/entropiaCosmica/spotify-clone" target="_blank" rel="noopener noreferrer">
+                    <FiGithub className="hover:text-orange-text transition duration-400 ease-out" />
+                  </a>
+                </div>
+                <div>
+                  <a href="https://spotify-clone-henna.vercel.app/login" target="_blank" rel="noopener noreferrer">
+                    <FiExternalLink className="hover:text-orange-text transition duration-400 ease-out" />
+                  </a>
+                </div>
               </div>
             </div>
           </li>
