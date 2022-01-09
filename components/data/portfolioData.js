@@ -1,52 +1,53 @@
-const workPlaces = [
+const portfolioData = [
   {
     idx: 0,
-    title: 'Freelance Full-Stack Developer',
-    company: 'Cosmic Pixel',
-    dates: 'November 2021 - Actual',
-    responsibilities: [
-      "Write efficient code using state-of-the-art software development practices",
-      "Coordinate and communicate with customers to plan web development projects from concept through completion, utilizing a variety of web development tools and technology.",
-      "Provide web solutions and develop web sites and web applications based on specific business needs for promotions, presentations, customer service and online services.",
-      "Manage databases and database servers",
-      "Create and maintain software documentation",
-      "Provide means for scalability of the web application",
-      "Manage, maintain and update existing web sites for customers and provide customer service.",
-
-    ]
+    title: 'Airbnb clone responsive UI',
+    description: 'Clon de Airbnb desarrollado con React, Next JS y Tailwind CSS con calendario de reserva por fechas y mapa de geolocalización.',
+    technologies: [
+      'Next js',
+      'React',
+      'Tailwind',
+      'Mapbox'
+    ],
+    github: 'https://github.com/entropiaCosmica/airbnb-clone',
+    extLink: 'https://airbnb-clone-weld-eta.vercel.app',
+    imgs: {
+      normal: "/../public/portfolio/airbnb-clone-normal.png",
+      mobile: "/../public/portfolio/airbnb-clone.png"
+    }
   },
   {
     idx: 1,
-    title: 'Nav/BC Developer',
-    company: 'LogixCare LLC',
-    dates: 'January - November 2021',
-    link: 'https://logixcaresb.com/',
-    responsibilities: [
-      'Extension development in AL (Application Language) for Microsoft ERP solution Navision (On-Site) & Business Central (Cloud)',
-      'Integrate technologies like Microsoft Dynamics CRM, WooCommerce and Power Platform apps.',
-      "Develop custom API's using the company information to deliver data to external apps.",
-      'Create custom reports with Microsoft Report Builder',
-      'Mantain and updating customers servers (Windows Server) and Database (SQL Server)',
-      'Refactor legacy code in order to keep all apps up-to-date with the latest version of the ERP.'
-    ]
+    title: 'OnDigital Pro',
+    description: 'Sitio web en Wordpress para grupo de asesores de inversiones en mercados forex, crypto, acciones e indíces bursátiles.',
+    technologies: [
+      'PHP',
+      'WordPress',
+      'Elementor'
+    ],
+    github: '',
+    extLink: 'https://www.cosmica.dev/ondigital/index.php/home/',
+    imgs: {
+      normal: "/../public/portfolio/ondigital-normal.png",
+      mobile: "/../public/portfolio/ondigital.png"
+    }
   },
   {
     idx: 2,
-    title: 'Junior WordPress Developer',
-    company: 'Trisquelab',
-    dates: 'April 2019 - November 2020',
-    link: 'https://www.trisquelab.com/',
-    responsibilities: [
-      "Meet with clients to discuss website design and function.",
-      "Design and build the website front-end.",
-      "Create the website architecture.",
-      "Design and manage the website back-end including database and server integration.",
-      "Generate WordPress themes and custom plugins.",
-      "Conduct website performance tests and troubleshoot content issues.",
-      "Monitor the performance of the live website.",
-      "Conduct WordPress training with the client."
-    ]
+    title: 'Spotify Clone',
+    description: 'Web app responsive desarrollada con la API oficial de Spotify, Next JS y Tailwind CSS, para visualizar la lista de playlists del usuario, canciones y reproductor funcional para reproducir/pausar y cambiar de canción.',
+    technologies: [
+      'Next js',
+      'React',
+      'Tailwind'
+    ],
+    github: 'https://github.com/entropiaCosmica/spotify-clone',
+    extLink: 'https://spotify-clone-henna.vercel.app/login',
+    imgs: {
+      normal: "/../public/portfolio/spotify-clone-normal.png",
+      mobile: "/../public/portfolio/spotify2.png"
+    }
   }
 ]
 
-export default workPlaces
+export default portfolioData
