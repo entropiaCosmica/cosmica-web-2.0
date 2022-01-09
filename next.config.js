@@ -8,8 +8,10 @@ module.exports = {
         filename: 'static/[hash][ext]',
       },
     })
-
     return config
   },
+  images: {
+    domains: ['raw.githubusercontent.com']
+  }
   // output: { path: path.resolve(__dirname, 'static'), },
 }

@@ -1,63 +1,54 @@
-import { useState } from 'react';
-import Tab from './Tab'
-import data from './data/portfolioData'
-import useWidth from '../hooks/useWidth'
+import { useEffect, useState } from 'react';
+import TabInfo from './TabInfo'
+import data from '../data/workData'
+import useWidth from '../../hooks/useWidth'
 
 const Tabs = () => {
   const [activeTab, setActiveTab] = useState(0)
+  const [tabInfo, setTabInfo] = useState([])
 
-  const tabDefStyles = [
-    "border-l-2",
-    "h-10",
-    "px-4",
-    "text-left"
-  ]
-
-  const tabDefStylesMobile = [
-    "border-b-2",
-    "h-14",
-    "px-4",
-    "text-center"
-  ]
-
-  const strTabStyles = tabDefStyles.join(' ').toString()
-  const strTabDefStylesMobile = tabDefStylesMobile.join(' ').toString()
-
-  const setTabInfo = (active) => {
-    switch (active) {
-      case 0:
-        return <Tab
-          index={data[0].idx}
-          title={data[0].title}
-          company={data[0].company}
-          dates={data[0].dates}
-          link={data[0].link}
-          responsibilities={data[0].responsibilities}
-        />
-
-      case 1:
-        return <Tab
-          index={data[1].idx}
-          title={data[1].title}
-          company={data[1].company}
-          dates={data[1].dates}
-          link={data[1].link}
-          responsibilities={data[1].responsibilities}
-        />
-
-      case 2:
-        return <Tab
-          index={data[2].idx}
-          title={data[2].title}
-          company={data[2].company}
-          dates={data[2].dates}
-          link={data[2].link}
-          responsibilities={data[2].responsibilities}
-        />
-    }
+  const tabStyles = {
+    mobile: [
+      "border-b-2",
+      "h-14",
+      "px-4",
+      "text-center"
+    ],
+    normal: [
+      "border-l-2",
+      "h-10",
+      "px-4",
+      "text-left"
+    ]
   }
 
+  const strTabStyles = tabStyles.normal.join(' ').toString()
+  const strTabStylesMobile = tabStyles.mobile.join(' ').toString()
+
   const getWidth = useWidth()
+
+  useEffect(() => {
+    if (activeTab !== undefined) {
+      handleTabInfo(activeTab)
+    }
+  }, [activeTab])
+
+  const handleActiveTab = (item) => {
+    setActiveTab(item.idx)
+  }
+
+  const handleTabInfo = (index) => {
+    setTabInfo(
+      {
+        index: data[index].idx,
+        title: data[index].title,
+        company: data[index].company,
+        dates: data[index].dates,
+        link: data[index].link,
+        responsibilities: data[index].responsibilities,
+      }
+    )
+  }
 
   if (getWidth < 768) {
     return (
@@ -75,9 +66,9 @@ const Tabs = () => {
               data.map((item) => {
                 return (
                   <button
-                    key={item.idx}
-                    onClick={() => setActiveTab(item.idx)}
-                    className={activeTab === item.idx ? `${strTabDefStylesMobile} activeTab` : `${strTabDefStylesMobile} unactiveTab`}>
+                    key={Math.random()}
+                    onClick={() => handleActiveTab(item)}
+                    className={activeTab === item.idx ? `${strTabStylesMobile} activeTab` : `${strTabStylesMobile} unactiveTab`}>
                     {item.company}
                   </button>
                 )
@@ -88,7 +79,14 @@ const Tabs = () => {
           {/** Content */}
           <div className="flex flex-col space-y-10 h-fit">
             {
-              setTabInfo(activeTab)
+              <TabInfo
+                title={tabInfo.title}
+                company={tabInfo.company}
+                dates={tabInfo.dates}
+                responsibilities={tabInfo.responsibilities}
+                link={tabInfo.link}
+                index={tabInfo.index}
+              />
             }
           </div>
         </div>
@@ -110,9 +108,9 @@ const Tabs = () => {
           {
             data.map((item) => {
               return (
-                <button
-                  key={item.idx}
-                  onClick={() => setActiveTab(item.idx)}
+                < button
+                  key={Math.random()}
+                  onClick={() => handleActiveTab(item)}
                   className={activeTab === item.idx ? `${strTabStyles} activeTab` : `${strTabStyles} unactiveTab`}>
                   {item.company}
                 </button>
@@ -124,7 +122,14 @@ const Tabs = () => {
         {/** Content */}
         <div className="flex flex-col space-y-3 h-fit">
           {
-            setTabInfo(activeTab)
+            <TabInfo
+              title={tabInfo.title}
+              company={tabInfo.company}
+              dates={tabInfo.dates}
+              responsibilities={tabInfo.responsibilities}
+              link={tabInfo.link}
+              index={tabInfo.index}
+            />
           }
         </div>
       </div>

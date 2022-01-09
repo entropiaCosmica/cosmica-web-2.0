@@ -3,12 +3,12 @@ import About from '../components/About'
 import Contact from '../components/Contact'
 import Email from '../components/Email'
 import Footer from '../components/Footer'
-import Portfolio from '../components/Portfolio'
+import Portfolio from '../components/Portfolio/Portfolio'
 import Social from '../components/Social'
 import Start from '../components/Start'
-import Experience from '../components/Experience'
-import Header from '../components/Header/Header'
-import Sidebar from '../components/Header/Sidebar'
+import Experience from '../components/Experience/Experience'
+import Header from '../components/Navbar/Header'
+import Navbar from '../components/Navbar/Navbar'
 import useWidth from '../hooks/useWidth'
 
 export default function Home() {
@@ -25,13 +25,7 @@ export default function Home() {
         <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;800&display=swap" rel="stylesheet" />
       </Head>
 
-      {
-        getWidth <= 768
-          ? <Sidebar />
-          : <Header />
-      }
-
-
+      <Navbar />
 
       <main className="px-[25px] md:px-[100px] xl:px-[150px] mx-auto my-0 max-w-[1600px]">
         <Start />
@@ -43,6 +37,7 @@ export default function Home() {
 
       <Social />
       <Email />
+
       <Footer />
 
     </div>
