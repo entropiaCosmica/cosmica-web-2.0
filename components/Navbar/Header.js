@@ -6,7 +6,7 @@ import Logo from './Logo'
 function Header() {
 
   return (
-    <header className={`fixed flex z-50 shadow-sm py-4  justify-between top-0 min-w-full bg-bg bg-opacity-80 backdrop-blur-md`}>
+    <header className={`fixed flex z-50 shadow-sm py-4  justify-between top-0 min-w-full bg-bg bg-opacity-80 backdrop-blur-xl`}>
       <nav className="mx-8 lg:mx-10 flex justify-between relative w-full max-w-auto">
         {/* Logo */}
         <Logo largeScreen={true} />
@@ -29,7 +29,7 @@ function Header() {
           }
 
           {/* Resume */}
-          <ResumeButton width={8} height={2.5} />
+          <ResumeButton width={8} height={3} />
         </div>
       </nav>
     </header>

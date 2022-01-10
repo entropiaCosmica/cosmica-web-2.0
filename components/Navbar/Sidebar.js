@@ -66,12 +66,12 @@ function SidebarB() {
 
           {/* Resume */}
           <div>
-            {/* <a rel="noopener noreferrer" target="_blank">
-              <button className={`border border-orange-border text-orange-text px-5 py-5 rounded-lg hover:bg-orange-bg hover:bg-opacity-20 transition duration-200 ease-out`}>
+            {/* <a rel="noopener noreferrer" target="_blank"> */}
+            {/* <button className={`border border-orange-border text-orange-text px-5 py-5 rounded-lg hover:bg-orange-bg hover:bg-opacity-20 transition duration-200 ease-out`}>
                 Resume
-              </button>
-            </a> */}
-            <ResumeButton width={10} height={3} />
+              </button> */}
+            {/* </a> */}
+            <ResumeButton width={8} height={3} />
           </div>
         </ul>
       </div>

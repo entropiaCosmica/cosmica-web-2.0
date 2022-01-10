@@ -36,7 +36,7 @@ function Logo({ largeScreen }) {
       offset={0}
       duration={500}
     >
-      <div className={`${largeScreen ? strLargeStyles : strMobileStyles}`}>
+      <div className={`${largeScreen ? strLargeStyles : strMobileStyles} relative`}>
         <Image
           src={CosmicPixelLogoSVGorizontal}
           alt="Cosmica Logo"
