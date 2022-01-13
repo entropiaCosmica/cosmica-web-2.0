@@ -23,7 +23,7 @@ const Portfolio = () => {
                   techs={item.technologies}
                   githubLink={item.github}
                   extLink={item.extLink}
-                  inverted={item.idx === 1 ? true : false}
+                  inverted={item.idx % 2 == 0 ? false : true}
                 />
               )
             })

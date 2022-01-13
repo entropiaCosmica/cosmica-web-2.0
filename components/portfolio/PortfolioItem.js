@@ -11,8 +11,7 @@ const invertedStyles = {
     "flex-col",
     "left-0",
     "w-3/6",
-    "col-span-4",
-    "z-10"
+    "col-span-4"
   ],
   notInverted: [
     "text-right",
@@ -86,9 +85,9 @@ function PortfolioItem({ image, title, description, techs, githubLink, extLink, 
   return (
     <li className="grid grid-cols-12 relative h-full items-center">
       {/** Image */}
-      <div className={`h-auto w-auto flex justify-center col-span-7 ${inverted ? 'col-end-13' : null}`}>
+      <div className={`h-auto w-auto flex justify-center relative col-span-7 ${inverted ? 'col-end-13' : null}`}>
         <Image
-          className="rounded-md shadow-md mix-blend-overlay"
+          className="rounded-md shadow-md "
           src={image.normal}
           alt=''
           layout="intrinsic"
@@ -98,14 +97,21 @@ function PortfolioItem({ image, title, description, techs, githubLink, extLink, 
           objectFit='contain'
           priority="normal"
         />
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href={extLink}
+          className="blurFix h-full w-full absolute rounded-md z-30 opacity-60 hover:bg-black transition duration-300 ease-out"
+        />
       </div>
 
       {/** Project Info */}
-      <div className={`${inverted ? strInvertedStyles : strNotInvertedStyles}`}>
+      <div className={`${inverted ? strInvertedStyles : strNotInvertedStyles} z-30`}>
         <div>
           <span className="SFMono text-orange-text text-sm">Featured Project</span>
+          <br />
           <a href={extLink} target="_blank" rel="noopener noreferrer">
-            <h2 className="text-gray-200 text-xl md:text-xl w-auto font-heebo font-semibold whitespace-nowrap hover:text-orange-text transition duration-400 ease-out">{title}</h2>
+            <h2 className={`text-gray-200 text-xl md:text-xl w-fit font-heebo font-semibold whitespace-nowrap hover:text-orange-text transition duration-400 ease-out ${!inverted ? "float-right" : null}`}>{title}</h2>
           </a>
         </div>
         <div className={`bg-light-gray-bg h-auto py-3 rounded-md shadow-md text-gray-400 ${inverted ? "pl-4 pr-10" : "pr-4 pl-10"}`}>
