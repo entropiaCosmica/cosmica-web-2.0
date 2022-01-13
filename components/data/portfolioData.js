@@ -35,7 +35,7 @@ const portfolioData = [
   {
     idx: 2,
     title: 'Spotify Clone',
-    description: 'Web app responsive desarrollada con la API oficial de Spotify, Next JS y Tailwind CSS, para visualizar la lista de playlists del usuario, canciones y reproductor funcional para reproducir/pausar y cambiar de canción.',
+    description: "Responsive web app developed with Spotify's official API, Next JS and Tailwind CSS, to display the user's playlist, songs and functional player to play/pause and change songs.",
     technologies: [
       'Next.js',
       'React',
