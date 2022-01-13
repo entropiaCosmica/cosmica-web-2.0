@@ -1,5 +1,6 @@
 import Image from "next/image"
-import profile from '../public/personal-pic.png'
+// import profile from '../public/personal-pic.png'
+import profile from '../public/portfolio-pic.png'
 import { IoMdArrowDropright } from 'react-icons/io'
 
 function About() {
@@ -23,7 +24,7 @@ function About() {
               I consider myself a highly motivated, task-driven, self-starting developer seeking to launch a career building web applications and services.
             </p>
             <p>
-              Here are a few technologies I’ve been working with recently:
+              Here are a few technologies I&apos;ve been working with recently:
             </p>
             <ul className="grid grid-cols-2 list-none list-inside text-sm md:text-base space-y-1">
               <li className="text-orange-text flex items-center space-x-2">
@@ -75,7 +76,7 @@ function About() {
               objectPosition="top"
             />
             <div className="border-2 w-56 h-56 md:w-72 md:h-72 border-orange-border absolute z-0 top-[20px] left-[20px] rounded-lg" />
-            {/* <div className="absolute w-64 h-64 rounded-lg bg-orange-bg z-30 mix-blend-multiply backdrop-blur-0 hover:hidden"></div> */}
+            <div className="bg-orange-bg w-56 h-56 md:w-72 md:h-72 absolute z-20 rounded-lg mix-blend-multiply bg-opacity-100 hover:bg-opacity-0 transition duration-200 ease-in-out"></div>
           </div>
         </div>
       </div>
