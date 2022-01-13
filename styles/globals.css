@@ -1,23 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/* 
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
-} */
 
 @layer base {
   @font-face {
@@ -57,20 +40,6 @@ a {
   font-family: 'SF Mono', sans-serif;
 }
 
-/* .SFMonoNormal {
-  font-family: 'SF Mono', sans-serif;
-  /* font-weight: 500; */
-  /* font-style: semibold; */
-/* } */
-
-.pic-overlay {
-  mix-blend-mode: multiply;
-}
-
-.header-blur {
-  backdrop-filter: blur(20px);
-}
-
 @layer components {
   .activeTab {
     @apply   text-orange-text border-orange-border bg-orange-bg bg-opacity-20
@@ -79,4 +48,9 @@ a {
   .unactiveTab {
     @apply  border-gray-border hover:bg-orange-bg hover:text-orange-text hover:bg-opacity-20 transition duration-200 ease-out text-gray-500
   } 
+}
+
+.blurFix {
+  backdrop-filter: blur(0);
+  /* mix-blend-mode: multiply; */
 }

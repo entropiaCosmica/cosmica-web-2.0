@@ -2,9 +2,9 @@ const portfolioData = [
   {
     idx: 0,
     title: 'Airbnb clone responsive UI',
-    description: 'Clon de Airbnb desarrollado con React, Next JS y Tailwind CSS con calendario de reserva por fechas y mapa de geolocalización.',
+    description: 'Airbnb clone developed with React and Next with reservation calendar by dates and geolocation services map.',
     technologies: [
-      'Next js',
+      'Next.js',
       'React',
       'Tailwind',
       'Mapbox'
@@ -12,14 +12,14 @@ const portfolioData = [
     github: 'https://github.com/entropiaCosmica/airbnb-clone',
     extLink: 'https://airbnb-clone-weld-eta.vercel.app',
     imgs: {
-      normal: "/../public/portfolio/airbnb-clone-normal.png",
-      mobile: "/../public/portfolio/airbnb-clone.png"
+      normal: "https://raw.githubusercontent.com/entropiaCosmica/cosmica-web-2.0/main/public/portfolio/airbnb-clone-normal.png",
+      mobile: "https://raw.githubusercontent.com/entropiaCosmica/cosmica-web-2.0/main/public/portfolio/airbnb-clone.png"
     }
   },
   {
     idx: 1,
     title: 'OnDigital Pro',
-    description: 'Sitio web en Wordpress para grupo de asesores de inversiones en mercados forex, crypto, acciones e indíces bursátiles.',
+    description: 'Wordpress website for a group of investment advisors in forex, crypto, stocks and stock indexes.',
     technologies: [
       'PHP',
       'WordPress',
@@ -28,8 +28,8 @@ const portfolioData = [
     github: '',
     extLink: 'https://www.cosmica.dev/ondigital/index.php/home/',
     imgs: {
-      normal: "/../public/portfolio/ondigital-normal.png",
-      mobile: "/../public/portfolio/ondigital.png"
+      normal: "https://raw.githubusercontent.com/entropiaCosmica/cosmica-web-2.0/main/public/portfolio/ondigital-normal.png",
+      mobile: "https://raw.githubusercontent.com/entropiaCosmica/cosmica-web-2.0/main/public/portfolio/ondigital.png"
     }
   },
   {
@@ -37,15 +37,16 @@ const portfolioData = [
     title: 'Spotify Clone',
     description: 'Web app responsive desarrollada con la API oficial de Spotify, Next JS y Tailwind CSS, para visualizar la lista de playlists del usuario, canciones y reproductor funcional para reproducir/pausar y cambiar de canción.',
     technologies: [
-      'Next js',
+      'Next.js',
       'React',
-      'Tailwind'
+      'Tailwind',
+      "NextAuth"
     ],
     github: 'https://github.com/entropiaCosmica/spotify-clone',
     extLink: 'https://spotify-clone-henna.vercel.app/login',
     imgs: {
-      normal: "/../public/portfolio/spotify-clone-normal.png",
-      mobile: "/../public/portfolio/spotify2.png"
+      normal: "https://raw.githubusercontent.com/entropiaCosmica/cosmica-web-2.0/main/public/portfolio/spotify-clone-normal.png",
+      mobile: "https://raw.githubusercontent.com/entropiaCosmica/cosmica-web-2.0/main/public/portfolio/spotify2.png"
     }
   }
 ]

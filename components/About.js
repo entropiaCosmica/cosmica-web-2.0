@@ -4,8 +4,8 @@ import { IoMdArrowDropright } from 'react-icons/io'
 
 function About() {
   return (
-    <section className="max-w-[900px] py-[100px] mx-auto" id="about">
-      <div className="flex flex-col space-y-5 justify-center">
+    <section className="max-w-[900px] h-screen mx-auto justify-center flex flex-col" id="about">
+      <div className="flex flex-col space-y-5">
         <div className="flex align-bottom items-baseline w-full">
           <span className="text-orange-text SFMono text-md md:text-lg font-bold mr-2">01.</span>
           <h2 className="text-gray-200 text-xl md:text-2xl w-auto font-heebo font-semibold whitespace-nowrap">About Me</h2>
@@ -14,17 +14,16 @@ function About() {
         <div className="flex flex-col lg:grid lg:grid-cols-5 gap-12">
           <div className="text-gray-400 space-y-3 col-span-3 text-base text-left">
             <p className="">
-              Quisque dapibus neque id nisl accumsan lobortis. Duis libero justo, hendrerit eget nisi vitae, dignissim efficitur erat.
-              Nunc feugiat dolor ut lectus commodo, id tempor elit convallis. Duis laoreet auctor massa vitae convallis.
+              Hi! My name is Santiago, I&apos;m 23, and I enjoy creating things that live on the internet. I have dedicated the last three years of my life to taught myself software development.
             </p>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec laoreet mattis dui, nec hendrerit sem pharetra eu. Vestibulum sed enim dictum diam aliquam aliquet. Donec varius lectus ipsum, sit amet aliquet nibh consequat quis.
+              My interest in web development started back in 2014 when I decided to try and create a Habbo server since I didn&apos;t had enough money to buy Credits in the official game - turns out creating an Apache server taught me a lot about back-end as well as HTML & CSS for rendering my app on the client!
             </p>
             <p>
-              Aliquam ultrices commodo diam, nec finibus augue iaculis et. Duis vitae quam venenatis, tempus lacus et, consequat lorem.
+              I consider myself a highly motivated, task-driven, self-starting developer seeking to launch a career building web applications and services.
             </p>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec laoreet mattis dui, nec hendrerit sem pharetra eu. Vestibulum sed enim dictum diam aliquam aliquet. Donec varius lectus ipsum, sit amet aliquet nibh consequat quis.
+              Here are a few technologies I’ve been working with recently:
             </p>
             <ul className="grid grid-cols-2 list-none list-inside text-sm md:text-base space-y-1">
               <li className="text-orange-text flex items-center space-x-2">
