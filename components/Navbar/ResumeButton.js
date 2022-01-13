@@ -1,4 +1,4 @@
-import pdf from '../../static/Santiago_Zapata_CV.pdf'
+import pdf from '../../public/Santiago_Zapata_CV.pdf'
 
 function ResumeButton({ width, height }) {
   const onResumeClick = () => {
