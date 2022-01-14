@@ -55,15 +55,15 @@ function PortfolioItem({ image, title, description, techs, githubLink, extLink, 
             <div className="h-auto py-6 text-gray-400">
               <p>{description}</p>
             </div>
-            <ul className="list-none flex justify-start space-x-5 text-gray-400 SFMono text-sm">
+            <div className="flex bottom justify-start flex-wrap text-gray-400 SFMono text-sm">
               {
                 techs.map(item => {
                   return (
-                    <li key={Math.random()}>{item}</li>
+                    <span key={Math.random()} className="pr-6 pb-2" >{item}</span>
                   )
                 })
               }
-            </ul>
+            </div>
             <div className="flex justify-start w-full self-end text-gray-400 pt-5 text-xl space-x-3">
               <div>
                 <a href={githubLink} target="_blank" rel="noopener noreferrer">

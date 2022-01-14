@@ -76,7 +76,7 @@ function About() {
               objectPosition="top"
             />
             <div className="border-2 w-56 h-56 md:w-72 md:h-72 border-orange-border absolute z-0 top-[20px] left-[20px] rounded-lg" />
-            <div className="bg-orange-bg w-56 h-56 md:w-72 md:h-72 absolute z-20 rounded-lg mix-blend-multiply bg-opacity-100 hover:bg-opacity-0 transition duration-200 ease-in-out"></div>
+            <div className="bg-orange-bg w-56 h-56 md:w-72 md:h-72 absolute z-20 rounded-lg mix-blend-multiply bg-opacity-100 hover:bg-opacity-0 transition duration-200 ease-in-out backdrop-blur-0"></div>
           </div>
         </div>
       </div>
